@@ -1,0 +1,75 @@
+/**
+ *
+ *
+ * @author Barryn Chun, Erik Huang
+ * @date 12/08/2015
+ */
+
+.panelmain {
+    padding: 10px;
+    background-color: white;
+
+    position: relative;
+}
+
+.custom_submit{
+    position: absolute;
+    width: 120px;
+    background-color: orange;
+
+    right: 0px;
+    top: 0px;
+
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+table tr td {
+    padding: 5px;
+}
+
+table tr td[class="formlabel"] {
+    text-align: right;
+    font-weight: bold;
+    min-width: 135px;
+}
+
+table tr td[class="formfield"] {
+//width: 50%;
+}
+
+.createteams {
+    height: 85px;
+}
+.teams_button {
+    height: 85px;
+    font-size: 20px;
+}
+.teams_button-centercontainer {
+    line-height: 85px;
+}
+
+.addparticipant {
+    height: 120px;
+}
+.go_button {
+    height: 120px;
+    font-size: 45px;
+}
+.go_button-centercontainer {
+    line-height: 120px;
+}
+
+.promoteuser {
+    height: 60px;
+}
+.promote_button {
+    height: 60px;
+    font-size: 20px;
+}
+.promote_button-centercontainer {
+    line-height: 60px;
+}

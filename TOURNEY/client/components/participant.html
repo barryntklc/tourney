@@ -1,0 +1,12 @@
+<template name="participant">
+
+    <div class="participant" data-id="{{ _id }}">
+        {{#if currentUser}}
+            {{#if admin}}
+                <button class="delete">&times;</button>&nbsp;
+            {{/if}}
+        {{/if}}
+        <strong>{{ participant_name }}</strong> &nbsp; ({{ participant_tier }} {{ participant_rank }})
+
+    </div>
+</template>

@@ -1,0 +1,27 @@
+<template name="createteams">
+    <div class="createteams panelmain">
+        <table>
+            <tr>
+                <!--Later have this panel return the actual IP and port number from config-->
+                <td class="formlabel">IP</td>
+                <td class="formfield">
+                    0.0.0.0:3002
+                </td>
+            </tr>
+            <tr>
+                <td class="formlabel">MODE</td>
+                <td class="formfield">
+                    <select id="team_size" style="width: 100%">
+                        <option value="5v5">5v5</option>
+                        <option value="4v4">4v4</option>
+                        <option value="3v3">3v3</option>
+                        <option value="2v2">2v2</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="teams_button custom_submit">
+            <span class="teams_button-centercontainer">TEAMS</span>
+        </div>
+    </div>
+</template>

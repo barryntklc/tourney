@@ -1,0 +1,43 @@
+<template name="addparticipant">
+    <div class="addparticipant panelmain">
+        <table>
+            <tr>
+                <td class="formlabel">SUMMONER NAME</td>
+                <td class="formfield">
+                    <input  id="sname" style="width: 100%" type="text" value="">
+                </td>
+            </tr>
+            <tr>
+                <td class="formlabel">TIER</td>
+                <td class="formfield">
+                    <select id="stier" style="width: 100%" value="Unranked">
+                        <option value="Unranked">Unranked</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                        <option value="Diamond">Diamond</option>
+                        <option value="Master">Master</option>
+                        <option value="Challenger">Challenger</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="formlabel">RANK</td>
+                <td class="formfield">
+                    <select id="srank" style="width: 100%" value="NO RANK" disabled="true">
+                        <option id="no_rank" value="NO RANK" selected></option>
+                        <option id="v" value="V">V</option>
+                        <option id="iv" value="IV">IV</option>
+                        <option id="iii" value="III">III</option>
+                        <option id="ii" value="II">II</option>
+                        <option id="i" value="I">I</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="go_button custom_submit">
+            <span class="go_button-centercontainer">GO</span>
+        </div>
+    </div>
+</template>

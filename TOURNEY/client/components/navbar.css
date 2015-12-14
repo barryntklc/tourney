@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.navbutton {
+
+    padding: 10px;
+    display: inline-block;
+
+    text-transform: uppercase;
+
+    background-color: white;
+}
+
+.info {
+    float: right;
+}
