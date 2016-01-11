@@ -7,6 +7,8 @@
 
 Template.createteams.events({
     "click .teams_button": function(event, template) {
+        alert("ERROR: This feature is not yet available.");
+
         console.log("DEBUG: teams_button clicked!");
 
         var team_size = template.$('#team_size').val();

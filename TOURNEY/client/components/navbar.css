@@ -18,3 +18,8 @@ nav {
 .info {
     float: right;
 }
+
+.count {
+    float: right;
+    right: 0;
+}

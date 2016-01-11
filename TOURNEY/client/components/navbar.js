@@ -19,6 +19,9 @@ Template.navbar.helpers({
             Session.set('admin_status', data);
         });
         return Session.get('admin_status');
+    },
+    participantCount: function () {
+        return Participants.find().count();
     }
 });
 

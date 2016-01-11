@@ -6,7 +6,7 @@
                 <button class="delete">&times;</button>&nbsp;
             {{/if}}
         {{/if}}
-        <strong>{{ participant_name }}</strong> &nbsp; ({{ participant_tier }} {{ participant_rank }})
+        <strong>{{ participant_name }}</strong> &nbsp; {{#if admin}} ({{ participant_tier }} {{ participant_rank }}) {{/if}}
 
     </div>
 </template>

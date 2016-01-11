@@ -31,6 +31,7 @@ Template.addparticipant.events({
             created: new Date()
         };
 
+        //add if tournament is not closed
         if (newParticipant.participant_name.trim() != "") { //if name is not null
             Participants.insert(newParticipant);
         } else {
