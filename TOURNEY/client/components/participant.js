@@ -14,12 +14,14 @@ Template.participant.events({
 
 Template.participant.helpers({
     admin: function() {
+        //console.log(Meteor.userId());
         Meteor.call("isAdmin", Meteor.userId(), function(error, data) {
             if (error) {
                 console.log(error);
             }
             Session.set('userType', data);
         });
+        //console.log(Session.get('userType'));
         return Session.get('userType');
         /*
          if (type === "admin") {

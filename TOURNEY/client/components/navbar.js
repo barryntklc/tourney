@@ -8,7 +8,7 @@ Template.navbar.events({
 
 //http://stackoverflow.com/questions/10677491/how-to-get-meteor-call-to-return-value-for-template
 //http://stackoverflow.com/questions/15252754/if-statements-in-handlebars
-http://stackoverflow.com/questions/29835663/meteor-how-should-i-update-the-users-collection-to-include-a-new-attribute-in-t
+//http://stackoverflow.com/questions/29835663/meteor-how-should-i-update-the-users-collection-to-include-a-new-attribute-in-t
 
 Template.navbar.helpers({
     admin: function() {

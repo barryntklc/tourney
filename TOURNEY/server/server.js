@@ -47,11 +47,35 @@ Meteor.methods({
     createTeams : function (team_size) {
         console.log("createTeams called with team size: " + team_size);
 
+        var players = Participants.find({}, {sort: {created: -1}});
+        console.log("players: " + players);
+        console.log("player0: " + players[1]);
+        //console.log("player 0: " + players[0]."._id";
         //translates all participants' tiers/ranks into numerical values
     }
 });
 
 // run this when the meteor app is started
 Meteor.startup(function() {
+    //console.log("startup");
+    /**
+     * For debugging purposes. If there are no tournaments, create a new one.
+     * @type {any}
+     */
+    var x = Tournaments.find().count();
 
+    if (x === 0) {
+        console.log(x);
+
+        var newTournament = {
+            name: "",
+            admins: [],
+            participants: [],
+            open: true,
+        };
+
+        Tournaments.insert(newTournament);
+    } else {
+        console.log(x);
+    }
 });

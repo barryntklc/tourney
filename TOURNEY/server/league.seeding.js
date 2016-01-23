@@ -19,3 +19,4 @@
  * 5. Create an array of team objects
  * 6. Seed the participants into the teams in a "zigzag" fashion
  **/
+

@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.meteor/local" />
       <excludeFolder url="file://$MODULE_DIR$/TOURNEY/.meteor/local" />
     </content>
     <orderEntry type="inheritedJdk" />

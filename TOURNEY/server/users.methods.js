@@ -11,11 +11,17 @@ Meteor.methods({
      * @return true if the current user is an admin, false otherwise
      */
     isAdmin: function (user) {
-        var x = Meteor.users.findOne({_id: user}).type;
-        if (x === "admin") {
-            return true;
-        } else {
+        //console.log("user: " + user);
+        //console.log(user === null);
+        if (user === null) {
             return false;
+        } else {
+            var x = Meteor.users.findOne({_id: user}).type;
+            if (x === "admin") {
+                return true;
+            } else {
+                return false;
+            }
         }
     },
     emailExists: function (email, userId) {
