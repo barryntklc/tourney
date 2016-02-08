@@ -27,7 +27,7 @@ translate = function (data, type) {
     }
 }
 
-Accounts.onCreateUser(function(options, user) {
+Accounts.onCreateUser(function (options, user) {
 
     var x = Meteor.users.find().count();
 
@@ -44,22 +44,33 @@ Accounts.onCreateUser(function(options, user) {
 });
 
 Meteor.methods({
-    createTeams : function (team_size) {
+    /**
+     * When an admin presses the "TEAMS" button, passes the gamemode (4v4, 5v5) value
+     * to the
+     *
+     * @param team_size
+     */
+    createTeams: function (team_size) {
         console.log("createTeams called with team size: " + team_size);
 
-        var players = Participants.find({}, {sort: {created: -1}});
-        console.log("players: " + players);
-        console.log("player0: " + players[1]);
+        seed_teams(team_size);
+
+        //var players = Participants.find({}, {sort: {created: -1}});
+        //console.log("players: " + players);
+        //console.log("player0: " + players[1]);
+
         //console.log("player 0: " + players[0]."._id";
         //translates all participants' tiers/ranks into numerical values
     }
 });
 
 // run this when the meteor app is started
-Meteor.startup(function() {
+Meteor.startup(function () {
     //console.log("startup");
     /**
      * For debugging purposes. If there are no tournaments, create a new one.
+     *
+     * This could later be modified so the site can host multiple tournaments.
      * @type {any}
      */
     var x = Tournaments.find().count();
